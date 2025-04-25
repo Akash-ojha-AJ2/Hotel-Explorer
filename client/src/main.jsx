@@ -49,7 +49,7 @@ const AppWrapper = () => {
 
   const logout = async () => {
     try {
-      const response = await fetch("http://localhost:4000/api/v1/user/logout", {
+      const response = await fetch(`${backend}/api/v1/user/logout`, {
         method: "GET",
         credentials: "include", // same as withCredentials: true in axios
       });
