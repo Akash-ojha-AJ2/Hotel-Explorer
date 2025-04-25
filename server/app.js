@@ -5,7 +5,7 @@ import express from "express";
 
 import cookieParser from "cookie-parser";
 import cors from "cors";
-import  Connection  from "./database/dbConnection.js";
+import  Connection  from "./database/dbconnection.js";
 import { errorMiddleware } from "./middlewares/error.js";
 import userRouter from "./routes/userRouter.js";
 import listingRouter from "./routes/listing.js";
