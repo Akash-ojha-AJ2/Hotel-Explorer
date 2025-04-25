@@ -77,7 +77,7 @@ const AppWrapper = () => {
   useEffect(() => {
     const fetchUser = async () => {
       try {
-        const res = await fetch("http://localhost:4000/api/v1/user/me", {
+        const res = await fetch(`${backend}/api/v1/user/me`, {
           credentials: "include",
         });
         if (res.ok) {
