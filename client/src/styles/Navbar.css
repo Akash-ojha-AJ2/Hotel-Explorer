@@ -1,0 +1,42 @@
+.custom-navbar {
+  background-color: #f9f3f3; /* Light pink */
+  height: 80px;
+}
+
+.compass-icon {
+  color: brown;
+  font-size: 28px;
+}
+
+.search-inp {
+  border-radius: 25px;
+  padding: 0.5rem 3rem;
+  border: 1px solid #ccc;
+}
+
+.search-btn {
+  background-color: #fe424d;
+  color: white;
+  border-radius: 25px;
+  padding: 0 1rem;
+  border: 1px solid black;
+}
+
+.logout-btn {
+  background-color: #222;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.logout-btn:hover {
+  background-color: #000;
+}
+
+
+
+
+

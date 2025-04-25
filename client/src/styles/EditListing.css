@@ -1,0 +1,64 @@
+.editForm-container {
+    max-width: 700px;
+    margin: auto;
+    padding: 2rem;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .editForm-heading {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+  }
+  
+  .editForm-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+  
+  .editForm-form input,
+  .editForm-form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+  }
+  
+  .editForm-form textarea {
+    resize: vertical;
+    min-height: 80px;
+  }
+  
+  .editForm-preview {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+  }
+  
+  .editForm-flexGroup {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .editForm-flexGroup > div {
+    flex: 1;
+  }
+  
+  .editForm-submitBtn {
+    padding: 0.75rem;
+    background-color: #222;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.2s ease;
+  }
+  
+  .editForm-submitBtn:hover {
+    background-color: #444;
+  }
+  
