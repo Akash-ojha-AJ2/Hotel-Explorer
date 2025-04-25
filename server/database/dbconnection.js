@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 
-export const connection = () => {
+const Connection = () => {
   mongoose
     .connect(process.env.DB_URL, {
       dbName: "MERN_AUTHENTICATION",
@@ -12,3 +12,5 @@ export const connection = () => {
       console.log(`Some error occured while connecting to database: ${err}`);
     });
 };
+
+export default Connection;
