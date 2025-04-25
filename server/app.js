@@ -5,7 +5,7 @@ import express from "express";
 
 import cookieParser from "cookie-parser";
 import cors from "cors";
-import { connection } from "./database/dbConnection.js";
+import  Connection  from "./database/dbConnection.js";
 import { errorMiddleware } from "./middlewares/error.js";
 import userRouter from "./routes/userRouter.js";
 import listingRouter from "./routes/listing.js";
@@ -35,6 +35,6 @@ app.use("/api/v1/listing/:id/reviews", reviewRouter);
 
 
 removeUnverifiedAccounts();
-connection();
+Connection();
 
 app.use(errorMiddleware);
