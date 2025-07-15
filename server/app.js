@@ -16,11 +16,18 @@ export const app = express();
 
 
 
+// Allow requests from your frontend hosted on Vercel
+const allowedOrigins = ['https://hotel-explorer-sepia.vercel.app'];
 
 app.use(cors({
-  origin: 'https://hotel-explorer-sepia.vercel.app',  // ✅ Replace with your frontend URL
-  methods: ['GET', 'POST', 'PUT', 'DELETE'],
-  credentials: true
+  origin: function (origin, callback) {
+    if (!origin || allowedOrigins.includes(origin)) {
+      callback(null, true);
+    } else {
+      callback(new Error("Not allowed by CORS"));
+    }
+  },
+  credentials: true, // if you're using cookies or sessions
 }));
 
 app.use(cookieParser());
